@@ -10,5 +10,6 @@ namespace Bot;
 
 class Config
 {
-
+    const BOT_TOKEN = '';
+    const GROUP_ID = '';
 }
