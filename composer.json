@@ -13,5 +13,10 @@
             "name": "Eugeny Guchek",
             "email": "mailbox@guki.org"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bot\\" : "src"
+        }
+    }
 }
