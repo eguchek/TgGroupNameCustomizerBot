@@ -5,5 +5,10 @@
  * Date: 24/11/18
  */
 
-require '../vendor/autoload.php';
+namespace Bot;
 
+
+class Config
+{
+
+}
