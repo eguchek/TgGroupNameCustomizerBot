@@ -12,7 +12,9 @@ require __DIR__.'/../vendor/autoload.php';
 $bot = new Telegram(\Bot\Config::BOT_TOKEN);
 $groupId = \Bot\Config::GROUP_ID;
 
-$nameGenerator = new \Bot\Generators\TreeWordGenerator();
+//$nameGenerator = new \Bot\Generators\TreeWordGenerator();
+$nameGenerator = new \Bot\Generators\SentenceGenerator();
+
 if (!$nameGenerator instanceof INameGenerator) {
     $message = sprintf('Generator %s must implement %s interface',
         get_class($nameGenerator),
